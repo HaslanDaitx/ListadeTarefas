@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <div class="container">
+        <div class="input-row">
+            <input id="nome" type="text" placeholder="Adicionar nova Tarefa..." style="flex-grow: 1;">
+            <select id="prioridade">
+                <option value="Alta">Alta</option>
+                <option value="Média">Média</option>
+                <option value="Baixa">Baixa</option>
+            </select>
+            <button onclick="adicionar()">Adicionar</button>
+        </div>
+        <p id="erro" class="erro"></p>
+        <div class="controls">
+            <input id="search" type="text" placeholder="Buscar tarefas...">
+            <select id="filter-prioridade">
+                <option value="todas">Todas</option>
+                <option value="Alta">Alta</option>
+                <option value="Média">Média</option>
+                <option value="Baixa">Baixa</option>
+            </select>
+            <select id="filter-data">
+                <option value="todas">Todas</option>
+                <option value="pendentes">Pendentes</option>
+                <option value="concluidas">Concluídas</option>
+            </select>
+            <select id="ordenacao">
+                <option value="nome">Nome</option>
+                <option value="prioridade">Prioridade</option>
+                <option value="data">Data</option>
+            </select>
+            <button onclick="limparFiltros()">Limpar</button>
+        </div>
+        <section class="legenda">
+            <h3>Legenda das Prioridades</h3>
+            <div class="prioridades">
+                <div class="prioridade alta">Alta</div>
+                <div class="prioridade media">Média</div>
+                <div class="prioridade baixa">Baixa</div>
+            </div>
+        </section>
+        <h2>Pendentes</h2>
+        <ul id="pendentes"></ul>
+        <h2>Concluídas</h2>
+        <ul id="concluidas"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

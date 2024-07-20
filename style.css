@@ -1,0 +1,161 @@
+header {
+    background-image: url("./imagem/Fundo_header.png");
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: blanchedalmond;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./imagem/Fundo_site.PNG');
+    margin-top: 150px;
+    box-sizing: border-box;
+    background-size: 1350px;
+}
+
+.container {
+    width: 800px;
+    padding: 30px;
+    background-color: #225e85;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.controls select {
+    width: 200px;
+}
+
+.legenda {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.prioridades {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prioridade {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.alta {
+    background-color: red;
+}
+
+.media {
+    background-color: orange;
+}
+
+.baixa {
+    background-color: green;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+li.alta {
+    background-color: red;
+}
+
+li.media {
+    background-color: orange;
+}
+
+li.baixa {
+    background-color: green;
+}
+
+li.concluida {
+    background-color: blue;
+}
+
+li .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.timestamp {
+    font-size: 16px;
+    margin-right: 10px;
+    color: rgb(252, 251, 251);
+}
+
+.erro {
+    color: red;
+    font-size: 16px;
+}
